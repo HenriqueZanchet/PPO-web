@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,700&display=swap');
+
+:root {
+    --bg-color: #ceb18d;
+    --main-color: #14120f;
+    --caret-color: #14120f;
+    --sub-color: #d4d2d1;
+    --text-color: #14120f;
+    --error-color: #c82931;
+    --error-extra-color: #ac1823;
+    --colorful-error-color: #c82931;
+    --colorful-error-extra-color: #ac1823;
+    --font: "Karla";
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 80vw;
+    font-size: 4vw;
+    color: var(--sub-color);
+    font-family: var(--font);
+    font-weight: 500;
+
+}
+
+main div.info {
+    display: flex;
+    font-size: 60%;
+    font-weight: 300;
+}
+
+main div.info > div:hover {
+    color: yellowgreen;
+}
+
+main div.info > div:last-child {
+    margin-left: 1em;
+}
+
+main p {
+    color: var(--sub-color);
+    font-weight: 700;
+    display: flex;
+}
+
+main p .word {
+    display: flex;
+    margin-right: .5em;
+}
+
+main p .word .letter {
+    color: var(--sub-color);
+}
+
+main p .word .letter.correct {
+    color: var(--text-color);
+}
+
+main p .word .letter.wrong {
+    color: var(--error-color);
+}

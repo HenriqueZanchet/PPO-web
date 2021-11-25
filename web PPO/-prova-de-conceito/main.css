@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2ab7f;
+}
+
+main,
+main textarea {
+    font-size: 1.75em;
+}
+
+main div.info {
+    display: flex;
+    justify-content: flex-end;
+}
+
+textarea {
+    border-radius: 30px;
+    border-width: 0.075em;
+    border-color: #c05850;
+    background-color: #f1ece1;
+    box-shadow: 0em 0em 1em #505668;
+}
